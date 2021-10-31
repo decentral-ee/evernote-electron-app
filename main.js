@@ -13,11 +13,13 @@ app.on('ready', () => {
           nodeIntegration: false
         }
     });
-    win.setMenuBarVisibility(true);
+    win.setMenuBarVisibility(false);
     win.loadURL(HOMEPAGE);
 
     win.webContents.on('will-navigate', (ev, url) => {
-        if (!url.startsWith("https://www.evernote.com/") && 
+        console.debug("will-navigate", url);
+        if (!url.startsWith("https://www.evernote.com/") &&
+            !url.startsWith("https://accounts.evernote.com/") &&
             !url.startsWith("https://accounts.google.com/")) {
             ev.preventDefault();
             shell.openExternal(url);
