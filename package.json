@@ -2,17 +2,15 @@
   "name": "evernote-electron-app",
   "version": "1.0.0",
   "description": "Electron app for evernote",
-  "repository": "https://github.com/hellwolf/evernote-electron-app.git",
+  "repository": "https://github.com/decentral-ee/evernote-electron-app.git",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build"
   },
   "devDependencies": {
-    "electron": "^3.0.10",
-    "electron-builder": "^20.36.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1"
   },
   "author": "@hellwolf",
   "license": "ISC"
