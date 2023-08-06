@@ -1,6 +1,6 @@
 {
   "name": "evernote-electron-app",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Electron app for evernote",
   "repository": "https://github.com/decentral-ee/evernote-electron-app.git",
   "main": "main.js",
@@ -12,6 +12,6 @@
     "electron": "^25.4.0",
     "electron-builder": "^24.6.3"
   },
-  "author": "@hellwolf",
+  "author": "Miao, ZhiCheng <zhicheng.miao@gmail.com>",
   "license": "ISC"
 }
